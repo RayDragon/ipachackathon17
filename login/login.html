@@ -20,18 +20,20 @@
 		<div class="top">
 			<h1 id="title" class="hidden"><span id="logo">Log<span>In</span></span></h1>
 		</div>
+            
 		<div class="login-box animated fadeInUp">
-			<div class="box-header">
+                     <form action="../mylib/signin_verify.php" method="post">
+                    <div class="box-header">
 				<h2>Log In</h2>
-		<form action="mylib/signin_verify.php">		
+                       		
 			</div>
 			<label for="username">Username</label>
 			<br/>
-			<input type="text" id="username">
+			<input type="text" id="username" name="email">
 			<br/>
 			<label for="password">Password</label>
 			<br/>
-			<input type="password" id="password">
+			<input type="password" id="password" name="password">
 			<br/>
 			<button type="submit">Sign In</button>
 			<br/>	

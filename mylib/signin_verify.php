@@ -17,5 +17,5 @@
         $_SESSION['token']=$token;
         $_SESSION['time']=time();
         mysqli_query($con->conn, "update users set token='".$token."' where email='".$email."' and pwd='".$pwd."'");
-        header("location:profile.php");
+        header("location:../insides/");
     }

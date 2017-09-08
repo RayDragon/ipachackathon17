@@ -12,7 +12,7 @@
     
     $id = id_get($con->conn,"users","uid");
     $query = mysqli_query($con->conn,"INSERT INTO users(`uid`,`name`,`email`,`pwd`) values('".$id."','".$name."','".$email."','".$pwd."')") or die("error occured");
-    header("location:../login.php");
+    header("location:../login/login.html");
     ?>
     
     
